@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoveIQ Challenge</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="app">
+
+        <div class="location-list">
+            <ul>
+               <li>Location 1</li>
+               <li>Location 2</li>
+               <li>Location 3</li>
+               <li>Location 4</li>
+               <li>Location 5</li>
+    </ul>
+        </div>
+
+        <div class="location-details">
+            <div class="location-image">
+            <h1 id="image">--</h1>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+                <img id="locale-image" alt="location image">
+            </div>
+        </div>
+
+        <div class="location-logo">
+            <h1 id="logo">--</h1>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+                <img id="locale-logo" src="" alt="SVG from JSON" />
+                <h2 id="locale-name">Location Name</h2>
+            </div>
+        </div>
+
+        <div class="location-info">
+            <h1 id="details">--</h1>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+            <p id="description"></p>
+            <div class="dets">
+                <span id="locale-description">Description: </span>
+                <br>
+                <span id="address">Address: </span>
+                <br>
+                <span id="hours">Hours: </span>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="ad-slideshow">
+           <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+           <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+        
+
+        <p id="error-msg"></p>
+
+    </div>   
+ 
+    <script src="app.js" defer></script>   
+</body>
+</html>
