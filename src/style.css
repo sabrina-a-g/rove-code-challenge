@@ -23,7 +23,8 @@ body {
 }
 
 .location-list {
-  max-height: 300px;
+  max-height: 142px;
+  border-radius: 1rem;
   width: 250px;
   flex-shrink: 0;
   overflow-y: auto;
@@ -41,6 +42,7 @@ body {
 .location-list li {
   padding: 8px;
   background: var(--muted);
+  border-radius: 1rem;
   color: var(--text);
   margin-bottom: 4px;
   cursor: pointer;
